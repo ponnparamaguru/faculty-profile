@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Faculty-Signup</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="login.js"></script>
+    </head>
+    <body>
+        
+        <header class="faculty-form">
+            <h1>Faculty Information</h1><h2>Sign up</h2><br><br>
+
+            <form class="form" name="myForm" action="submit.html" onsubmit="return validateForm()">
+                <div class="profile-pic">
+                    <img src="img/profile.png" id="photo">
+                    <div class="round">
+                        <input type="file" id="file">
+                        <i id="uploadBtn" class="fa fa-camera" style="color: #fff;"></i>
+                    </div>
+                  </div><br><br>
+                  <script src="app.js"></script>
+            <label class="form-txt" for="name">Faculty Name : </label>
+            <input type="text" class="form-box" id="name" name="name" placeholder="Faculty Name"><br><br>
+
+            <label class="form-txt" for="occ">Qualification : </label> 
+            <select class="select" name="occ" id="occ">
+              <option value="Professor">Professor</option>
+              <option value="Assistant Professor">Assistant Professor</option>
+              <option value="Head of Department">Head of Department</option>
+              <option value="Director">Director</option>
+            </select> <br><br>
+
+            <label class="form-txt" for="exp">Expertise in : </label>
+            <input type="text" class="form-box" id="exp" name="exp" placeholder="Expertise"><br><br>
+
+            <label class="form-txt" for="name">Honours : </label>
+            <input type="text" class="form-box" id="hor" name="hor" placeholder="Qualification"><br><br>
+
+            <a href=""><input type="submit" class="submit" value="Submit"></a><br><br> 
+        </form>
+    </header>
+    </body>
+</html>
